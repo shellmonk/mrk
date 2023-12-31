@@ -2,6 +2,8 @@ use std::path::PathBuf;
 use walkdir::WalkDir;
 use crate::config::Config;
 
+
+// TODO: This function is ugly, should be fixed
 pub fn generate(config_file: &PathBuf, _config: &Config) {
     let main_dir = config_file.parent().unwrap();
 

@@ -7,5 +7,7 @@ mod config;
 
 fn main() {
     let config = CliArgs::parse();
+
+    // TODO: Shitty design, fix this
     generator::generate(&config.config, &config::parse_config(&config.config));
 }
